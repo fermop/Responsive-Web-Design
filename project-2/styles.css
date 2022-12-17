@@ -1,0 +1,155 @@
+:root {
+  --primary-clr-100: #f8f9fa;
+  --primary-clr-200: #e9ecef;
+  --primary-clr-300: #ced4da;
+  --primary-clr-400: #ced4da;
+  --primary-clr-500: #adb5bd;
+  --primary-clr-600: #6c757d;
+  --primary-clr-700: #495057;
+  --primary-clr-800: #343a40;
+  --primary-clr-900: #212529;
+  --ff-base: 'Roboto', sans-serif;
+}
+      /* ----- Reset ----- */
+/* 1. More-intuitive box-sizing model. */
+*, *::before, *::after {box-sizing: border-box;}
+
+/*  2. Remove default margin */
+* {margin: 0;}
+/* 3. Allow percentage-based heights in the application */
+/* html, body {height: 100%;} */
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input, button, textarea, select {font: inherit;}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+
+/* ----- Global ----- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: var(--ff-base);
+  background-color: var(--primary-clr-100);
+  padding: 1rem;
+}
+ul li span {
+  font-weight: 700;
+}
+/* ----- Utility Classes ----- */
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header {
+  color: var(--primary-clr-800);
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+.text {
+  color: var(--primary-clr-700);
+  font-size: 1rem;
+  line-height: 1.25;
+  text-align: justify;
+}
+/* ----- Main ----- */
+.section-1 {
+  width: 100%;
+  max-width: 52.5rem;
+  min-height: 33.75rem;
+  height: 95vh;
+  background-color: var(--primary-clr-300);
+  border-radius: .25rem;
+  padding: 1rem;
+  margin: 0 auto;
+  align-items: center;
+  gap: 1.5rem;
+}
+.wrapper {
+  max-width: 30rem;
+  background-color: var(--primary-clr-200);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+#img-div {
+  max-width: 30rem;
+  min-height: 25.5rem;
+  background-color: var(--primary-clr-200);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+  gap: 1rem;
+}
+#image {
+  border-radius: .75rem;
+}
+#tribute-info {
+  max-width: 39.375rem;
+  padding: 1rem 1rem 0;
+  margin: 5vh auto 0;
+}
+.time-line_title,
+.phrase,
+.more-info {
+  text-align: center;
+}
+.wrapper-phrase {
+  max-width: 26.875rem;
+  margin: 3rem auto;
+}
+.phrase, .author {
+  color: var(--primary-clr-600);
+}
+.author {
+  text-align: right;
+}
+ul {
+  padding-left: 0rem;
+  list-style-type: none;
+}
+ul li {
+  margin-bottom: 1rem;
+}
+ul li span {
+  color: var(--primary-clr-900);
+}
+.more-info {
+  max-width: 41.25rem;
+  color: var(--primary-clr-800);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0 auto 2rem;
+}
+.more-info a {
+  color: var(--primary-clr-600);
+}
+.more-info a:hover {
+  transition: .25s;
+  opacity: .7;
+}
+/* ----- Responsiveness ----- */
+@media (min-width: 29.6875rem) {
+  #title {
+    text-align: center;
+  }
+}
+@media (min-width: 93.75rem) {
+  html {
+    font-size: 150%;
+  }
+}

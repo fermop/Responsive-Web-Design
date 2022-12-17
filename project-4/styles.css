@@ -1,0 +1,278 @@
+:root {
+  --primary-clr-200: #e0e1dd;
+  --primary-clr-300: #778da9;
+  --primary-clr-400: #415a77;
+  --primary-clr-500: #1b263b;
+  --primary-clr-600: #0d1b2a;
+
+  --ff-base: 'Roboto', sans-serif;
+}
+/* ----- Reset ----- */
+/* 1. More-intuitive box-sizing model. */
+*, *::before, *::after {box-sizing: border-box;}
+
+/*  2. Remove default margin */
+* {margin: 0;}
+/* 3. Allow percentage-based heights in the application */
+html, body {height: 100%;}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input, button, textarea, select {font: inherit;}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+
+/* ----- Global ----- */
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.6875rem;
+}
+body {
+  background-color: var(--primary-clr-200);
+  font-family: var(--ff-base);
+}
+/* ----- Utility classes ----- */
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+/* ----- Navbar ----- */
+#header {
+  width: 100%;
+  background-color: var(--primary-clr-500);
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+  z-index: 2;
+  
+}
+.header__container {
+  max-width: 60rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#header i {
+  color: var(--primary-clr-200);
+}
+h1 {
+  color: var(--primary-clr-200);
+  font-size: 1.5rem;
+}
+#nav-bar {
+  width: 100%;
+  max-width: 31.25rem;
+}
+#nav-bar ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 1rem; */
+}
+#nav-bar ul li {
+  list-style-type: none;
+}
+.nav-link, a {
+  color: var(--primary-clr-200);
+  text-decoration: none;
+  opacity: .8;
+  cursor: pointer;
+}
+.nav-link:hover, #submit:hover {
+  transition: .25s;
+  opacity: 1;
+}
+/* Main content */
+.main {
+  margin-top: 6.75rem;
+}
+.form {
+  height: 40vh;
+  background-image: url(https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#form {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.form h2 {
+  color: var(--primary-clr-200);
+  font-size: 1.25rem;
+  text-align: center;
+}
+#email {
+  background-color: rgba(126, 126, 126, 0.5);
+  border: none;
+  border-radius: .5rem;
+  padding: .25rem;
+}
+#email::placeholder {
+  font-size: .75rem;
+  color: var(--primary-clr-200);
+  padding-left: 1rem;
+}
+#submit {
+  border: none;
+  background-color: var(--primary-clr-400);
+  color: var(--primary-clr-200);
+  font-size: .75rem;
+  border-radius: .5em;
+  padding: .5rem 1rem;
+  opacity: .9;
+  cursor: pointer;
+}
+.features { 
+  display: flex;
+  flex-direction: column;
+}
+.feature-wrapper {
+  height: 50vh;
+  padding: 1.5rem 2.25rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.feature-text, .feature-icon {
+  z-index: 1;
+}
+.feature-icon i {
+  font-size: 1.5rem;
+  color: var(--primary-clr-500);
+}
+.feature-text h2 {
+  color: var(--primary-clr-500);
+  font-size: 1.5rem;
+}
+.feature-text p, .footer p {
+  color: var(--primary-clr-300);
+  font-size: 1rem;
+  text-align: justify;
+  margin-top: .5rem;
+}
+.feature-wrapper:nth-of-type(2) {
+  background-image: url(https://images.unsplash.com/photo-1553105659-d918b253f0f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.feature-wrapper:nth-of-type(2)::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+}
+.feature-wrapper:nth-of-type(2) h2 {
+  color: var(--primary-clr-200);
+}
+.feature-wrapper:nth-of-type(2) i {
+  color: var(--primary-clr-200);
+}
+.feature-wrapper:last-of-type {
+  margin-bottom: 1rem;
+}
+/* Video section */
+.howto {
+  background-color: var(--primary-clr-600);
+  padding: 5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.howto h2 {
+  color: var(--primary-clr-200);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.howto p {
+  color: var(--primary-clr-300);
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+#video {
+  width: 100%;
+  max-width: 35rem;
+}
+/* Price section */
+.pricing {
+  padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21.4375rem, 1fr));
+  gap: 1rem;
+}
+.card {
+  border: 1px solid var(--primary-clr-500);
+  padding: 1rem;
+}
+.card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card__title {
+  margin-bottom: 1rem;
+}
+/* Footer */
+.footer {
+  background-color: var(--primary-clr-600);
+  padding: .25rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer__links {
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.footer p {
+  text-align: right;
+  margin-top: 0;
+}
+/* Responsiveness */
+@media (min-width: 600px) {
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

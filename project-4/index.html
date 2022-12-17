@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page | Solution</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/4d3920bd92.js" crossorigin="anonymous"></script>
+  <!-- Style sheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+
+  <header id="header">
+    <!-- This image is ignored but has to be set in order to pass all the tests on the freeCodeCamp page -->
+    <img src="" alt="" id="header-img">
+    <div class="header__container">
+      <div class="header__logo">
+        <i class="fa-solid fa-bicycle"></i>
+        <h1>Nicycles</h1>
+      </div>
+      <!------->
+      
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#howto" class="nav-link">Into ridding a bike?</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+
+  <main class="main">
+
+    <!-- Form section -->
+    
+    <section class="form">
+      <div class="mask">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <h2>Would like to ride one of the best bicycles ever?</h2>
+        <!-- Email input -->
+          <input type="email" 
+                  name="email" 
+                  id="email" 
+                  placeholder="Enter your email address"
+            >
+            <!-- button -->
+          <input type="submit" 
+                  value="Get started" 
+                  id="submit"
+            >
+        </form>
+      </div>
+    </section>
+
+    <!-- Features section -->
+
+    <section id="features" class="features">
+        
+        <div class="feature-wrapper">
+          <div class="feature-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="feature-text">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem error obcaecati et animi iure!</p>
+          </div>
+        </div>
+  
+        <div class="feature-wrapper">
+            <div class="feature-text">
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, et.</p>
+            </div>
+            <div class="feature-icon">
+            <i class="fa-solid fa-money-check-dollar"></i>
+          </div>
+        </div>
+  
+        <div class="feature-wrapper">
+          <div class="feature-icon">
+            <i class="fa-solid fa-droplet-slash"></i>
+          </div>
+          <div class="feature-text">
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste sed quibusdam laboriosam!</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Video section -->
+
+    <section id="howto" class="howto">
+      <h2>Have no idea how to ride a bike?</h2>
+      <p>It doesn't matter! learn in less than 5 minutes and start having fun.</p>
+
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/GyLlw1CgXf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- Price section -->
+
+    <section id="pricing" class="pricing">
+      <div class="card">
+        <header class="card__header">
+          <i class="fa-solid fa-bicycle"></i>
+          <h2 class="card__title">Kids bicycle</h2>
+        </header>
+        <ul>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ul>
+      </div>
+      
+      <div class="card">
+        <header class="card__header">
+          <i class="fa-solid fa-bicycle"></i>
+          <h2 class="card__title">Vintage bicycle</h2>
+        </header>
+        <ul>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <header class="card__header">
+          <i class="fa-solid fa-bicycle"></i>
+          <h2 class="card__title">Hybrid bicycle</h2>
+        </header>
+        <ul>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <p>Copyright 2016, Nicycle</p>
+  </footer>
+</body>
+</html>

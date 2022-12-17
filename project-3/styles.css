@@ -1,0 +1,148 @@
+:root {
+    --code-bg: #e6dcdc;
+}
+/* ----- Reset ----- */
+/* 1. More-intuitive box-sizing model. */
+*, *::before, *::after {box-sizing: border-box;}
+
+/*  2. Remove default margin */
+* {margin: 0;}
+/* 3. Allow percentage-based heights in the application */
+/* html, body {height: 100%;} */
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input, button, textarea, select {font: inherit;}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+/* ----- Global ----- */
+html {
+    font-size: 50%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fefae0;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    padding-left: 0;
+    padding-top: 0;
+}
+#navbar, #main-doc {
+    width: 100%;
+}
+.img {
+  width: 75%;
+  margin: 0 auto 1rem;
+}
+/* ----- Utility classes ----- */
+.bold {
+  font-weight: 700;
+}
+.padding-top {
+  padding-top: 1rem;
+}
+.code {
+    background-color: var(--code-bg);
+    font-size: .75rem;
+    border-radius: .375em;
+    padding: 0.375em;
+}
+.liveout {
+    background-color: rgb(235, 235, 235);
+}
+.comment {
+    opacity: .7;
+}
+/* ----- Nav aside ----- */
+#navbar header {
+    text-align: center;
+}
+#navbar {
+    width: 25%;
+    height: 100vh;
+    border-right: 5px solid gray;
+    position: fixed;
+    padding: 0;
+}
+.scroll-container {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.scroll-container a {
+    color: gray;
+    text-decoration: none;
+    border-top: 1.5px solid gray;
+    padding: 1rem 0 1rem 2rem;
+    display: block;
+}
+.scroll-container a:last-of-type {
+    border-bottom: none;
+    padding-bottom: 2rem;
+}
+a:hover {
+    transition: all ease .5s;
+    color: #000;
+}
+/* ----- Documentation ----- */
+#main-doc {
+    width: 75%;
+    padding: 1rem;
+    padding-left: 2rem;
+    margin-left: auto;
+}
+header {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+p {
+    padding-left: 1rem;
+}
+p, li {
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+ul, ol {
+    padding-left: 4rem;
+}
+pre {
+    width: 90%;
+    background-color: #ede0d4;
+    color: gray;
+    border-radius: .25rem;
+    margin: 0 auto 1rem 1.5rem;
+}
+a {
+    color: gray;
+}
+/* ----- Responsiveness -----*/
+@media (min-width: 45rem /* 720px */) {
+    html {
+        font-size: 100%;
+    }
+}
