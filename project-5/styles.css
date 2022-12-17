@@ -48,15 +48,15 @@ ul {
 a {
   text-decoration: none;
 }
-/* Header */
-.header {
+/* navbar */
+#navbar {
   width: 100%;
   background-color: var(--white);
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
 }
-#navbar {
+.navbar__links-container{
   max-width: 75rem;
   display: flex;
   justify-content: flex-end;
@@ -113,6 +113,7 @@ h2 {
 }
 .projects-section-text a {
   color: var(--black);
+  font-weight: 500;
 }
 .projects-from {
   font-size: 1.125rem;
@@ -137,10 +138,11 @@ h2 {
   overflow: hidden;
 }
 /* images of freeCodeCamp projects */
-.fcc-img-1 {background-image: url();}
-.fcc-img-2 {background-image: url();}
-.fcc-img-3 {background-image: url();}
-.fcc-img-4 {background-image: url();}
+.fcc-img-1 {background-image: url(https://github.com/fermop/Responsive-Web-Design/blob/main/images/page-1.jpeg?raw=true);}
+.fcc-img-2 {background-image: url(https://github.com/fermop/Responsive-Web-Design/blob/main/images/page-2.jpeg?raw=true);}
+.fcc-img-3 {background-image: url(https://github.com/fermop/Responsive-Web-Design/blob/main/images/page-3.jpeg?raw=true);}
+.fcc-img-4 {background-image: url(https://github.com/fermop/Responsive-Web-Design/blob/main/images/page-4.jpeg?raw=true);}
+.fcc-img-5 {background-image: url(https://github.com/fermop/Responsive-Web-Design/blob/main/images/page-5.jpeg?raw=true);}
 /* images of Frontend Mentor projects */
 .feM-img-1 {background-image: url(https://fermop.github.io/portafolio/assets/img/challenge1.png);}
 .feM-img-2 {background-image: url(https://fermop.github.io/portafolio/assets/img/challenge2.png);}
@@ -158,7 +160,7 @@ h2 {
   transition: .75s;
   transform: scale(1.05);
 }
-.card-title {
+.project-title {
   height: 3rem;
   color: var(--headings);
   font-size: 1rem;
@@ -203,7 +205,7 @@ h2 {
   color: var(--black);
   font-size: 1rem;
 }
-/* media querie to pass all the tests */
+/* Media query required to pass all the tests */
 @media (min-width: 3000px) {
   body {
     background-color: var(--white);

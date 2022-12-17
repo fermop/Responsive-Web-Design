@@ -15,15 +15,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
     <nav id="navbar">
-      <ul>
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </ul>
+      <div class="navbar__links-container">
+        <ul>
+          <li><a href="#welcome-section">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-  </header>
 
   <main class="main">
     <!-- Welcome section -->
@@ -38,7 +38,7 @@
       <header class="projects-section-header">
         <h2 class="projects-section-title">These are some of my projects</h2>
         <p class="projects-section-text">
-          I have made some projects required to get the certification from <a href="" target="_blank">freeCodeCamp</a> and I have some experience making responsive web pages for mobile, tablets and desktop devices about cards from <a href="https://www.frontendmentor.io/profile/fermop" target="_blank">Frontend Mentor</a>.
+          I have made some projects of <a href="https://www.freecodecamp.org/learn" target="_blank">freeCodeCamp's</a> <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">Responsive Web Design</a> course and I have some experience making responsive web pages for mobile, tablets and desktop devices from <a href="https://www.frontendmentor.io/profile/fermop" target="_blank">Frontend Mentor's challenges</a>.
         </p>
       </header>
 
@@ -47,51 +47,63 @@
           
           <div class="projects-container">
             <div class="project-card">
-              <a href="" target="_blank">
+              <a href="https://fermop.github.io/Responsive-Web-Design/project-1/index.html" target="_blank">
                 <div class="image-container">
-                  <div class="fcc-img-1 position-style hover-effect"><!-- The image has to be taken as a link form --></div>
+                  <div class="fcc-img-1 position-style hover-effect"></div>
                 </div>
-                <h2 class="card-title">Survey Form</h2>
+    <!-- class 'project-tile' needed to fix bug to pass all the tests -->
+                <h2 class="project-title project-tile">Survey Form</h2>
               </a>
               <div class="card-buttons">
-                <a href="" target="_blank" class="card-btn demo">Demo</a>
-                <a href="" target="_blank" class="card-btn repo">Repository</a>
+                <a href="https://fermop.github.io/Responsive-Web-Design/project-1/index.html" target="_blank" class="card-btn demo">Demo</a>
+                <a href="https://github.com/fermop/Responsive-Web-Design/tree/main/project-1" target="_blank" class="card-btn repo">Repository</a>
               </div>
             </div>
             <div class="project-card">
-              <a href="" target="_blank">
+              <a href="https://fermop.github.io/Responsive-Web-Design/project-2/index.html" target="_blank">
               <div class="image-container">
-                <div class="fcc-img-2 position-style hover-effect"><!-- The image has to be taken as a link form --></div>
+                <div class="fcc-img-2 position-style hover-effect"></div>
               </div>
-              <h2 class="card-title">Tribute Page</h2>
+              <h2 class="project-title">Tribute Page</h2>
               </a>
               <div class="card-buttons">
-                <a href="" target="_blank" class="card-btn demo">Demo</a>
-                <a href="" target="_blank" class="card-btn repo">Repository</a>
+                <a href="https://fermop.github.io/Responsive-Web-Design/project-2/index.html" target="_blank" class="card-btn demo">Demo</a>
+                <a href="https://github.com/fermop/Responsive-Web-Design/tree/main/project-2" target="_blank" class="card-btn repo">Repository</a>
               </div>
             </div>
             <div class="project-card">
-              <a href="" target="_blank">
+              <a href="https://fermop.github.io/Responsive-Web-Design/project-3/index.html" target="_blank">
               <div class="image-container">
-                <div class="fcc-img-3 position-style hover-effect"><!-- The image has to be taken as a link form --></div>
+                <div class="fcc-img-3 position-style hover-effect"></div>
               </div>
-              <h2 class="card-title">Technical Documentation</h2>
+              <h2 class="project-title">Technical Documentation</h2>
               </a>
               <div class="card-buttons">
-                <a href="" target="_blank" class="card-btn demo">Demo</a>
-                <a href="" target="_blank" class="card-btn repo">Repository</a>
+                <a href="https://fermop.github.io/Responsive-Web-Design/project-3/index.html" target="_blank" class="card-btn demo">Demo</a>
+                <a href="https://github.com/fermop/Responsive-Web-Design/tree/main/project-3" target="_blank" class="card-btn repo">Repository</a>
               </div>
             </div>
             <div class="project-card">
-              <a href="" target="_blank">
+              <a href="https://fermop.github.io/Responsive-Web-Design/project-4/index.html" target="_blank">
               <div class="image-container">
-                <div class="fcc-img-4 position-style hover-effect"><!-- The image has to be taken as a link form --></div>
+                <div class="fcc-img-4 position-style hover-effect"></div>
               </div>
-              <h2 class="card-title">Product Landing Page</h2>
+              <h2 class="project-title">Product Landing Page</h2>
               </a>
               <div class="card-buttons">
-                <a href="" target="_blank" class="card-btn demo">Demo</a>
-                <a href="" target="_blank" class="card-btn repo">Repository</a>
+                <a href="https://fermop.github.io/Responsive-Web-Design/project-4/index.html" target="_blank" class="card-btn demo">Demo</a>
+                <a href="https://github.com/fermop/Responsive-Web-Design/tree/main/project-4" target="_blank" class="card-btn repo">Repository</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <a href="https://fermop.github.io/Responsive-Web-Design/project-5/index.html" target="_blank">
+              <div class="image-container">
+                <div class="fcc-img-5 position-style hover-effect"></div>
+              </div>
+              <h2 class="project-title">Personal Portfolio Webpage</h2>
+              </a>
+              <div class="card-buttons">
+                <a href="https://github.com/fermop/Responsive-Web-Design/tree/main/project-5" target="_blank" class="card-btn repo">Repository</a>
               </div>
             </div>
 
@@ -105,9 +117,9 @@
             <div class="project-card">
               <a href="https://fermop.github.io/Frontend_Mentor-1stchallenge/" target="_blank">
               <div class="image-container">
-                <div class="feM-img-1 position-style hover-effect"><!-- The image has to be taken as a link form --></div>
+                <div class="feM-img-1 position-style hover-effect"></div>
               </div>
-              <h2 class="card-title">3-column preview card component</h2>
+              <h2 class="project-title">3-column preview card component</h2>
               </a>
               <div class="card-buttons">
                 <a href="https://fermop.github.io/Frontend_Mentor-1stchallenge/" target="_blank" class="card-btn demo">Demo</a>
@@ -117,9 +129,9 @@
             <div class="project-card">
               <a href="https://fermop.github.io/Frontend_Mentor-2ndChallenge/" target="_blank">
               <div class="image-container">
-                <div class="feM-img-2 position-style hover-effect"><!-- The image has to be taken as a link form --></div>
+                <div class="feM-img-2 position-style hover-effect"></div>
               </div>
-              <h2 class="card-title">Huddle landing page with single introductory section</h2>
+              <h2 class="project-title">Huddle landing page with single introductory section</h2>
               </a>
               <div class="card-buttons">
                 <a href="https://fermop.github.io/Frontend_Mentor-2ndChallenge/" target="_blank" class="card-btn demo">Demo</a>
@@ -129,9 +141,9 @@
             <div class="project-card">
               <a href="https://fermop.github.io/Frontend_Mentor-3rdChallenge/" target="_blank">
               <div class="image-container">
-                <div class="feM-img-3 position-style hover-effect"><!-- The image has to be taken as a link form --></div>
+                <div class="feM-img-3 position-style hover-effect"></div>
               </div>
-              <h2 class="card-title">QR code component</h2>
+              <h2 class="project-title">QR code component</h2>
               </a>
               <div class="card-buttons">
                 <a href="https://fermop.github.io/Frontend_Mentor-3rdChallenge/" target="_blank" class="card-btn demo">Demo</a>
@@ -141,9 +153,9 @@
             <div class="project-card">
               <a href="https://fermop.github.io/Frontend_Mentor-4thChallenge/" target="_blank">
               <div class="image-container">
-                <div class="feM-img-4 position-style hover-effect"><!-- The image has to be taken as a link form --></div>
+                <div class="feM-img-4 position-style hover-effect"></div>
               </div>
-              <h2 class="card-title">Single price grid component</h2>
+              <h2 class="project-title">Single price grid component</h2>
               </a>
               <div class="card-buttons">
                 <a href="https://fermop.github.io/Frontend_Mentor-4thChallenge/" target="_blank" class="card-btn demo">Demo</a>
