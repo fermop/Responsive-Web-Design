@@ -2,7 +2,7 @@
 
 In this repository you can find all the solutions of the projects from the [Responsive Web Desing](https://www.freecodecamp.org/learn/2022/responsive-web-design/) course from freeCodeCamp.
 
-- Live Site URL: [https://github.com/fermop/Responsive-Web-Design]()
+- Live Site URL: [https://github.com/fermop/Responsive-Web-Design/](https://fermop.github.io/Responsive-Web-Design/)
 
 ## Author
 - freeCodeCamp - [fermop](https://www.freecodecamp.org/fermop)
