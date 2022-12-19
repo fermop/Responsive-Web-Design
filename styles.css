@@ -114,11 +114,17 @@ a:hover {
   margin: 1rem 0;
 }
 /* Images */
-.fcc-img-1 {background-image: url(./images/page-1.jpeg);}
-.fcc-img-2 {background-image: url(./images/page-2.jpeg)}
-.fcc-img-3 {background-image: url(./images/page-3.jpeg);}
-.fcc-img-4 {background-image: url(./images/page-4.jpeg);}
-.fcc-img-5 {background-image: url(./images/page-5.jpeg);}
+.webp .fcc-img-1 {background-image: url(./images/page-1.webp);}
+.webp .fcc-img-2 {background-image: url(./images/page-2.webp)}
+.webp .fcc-img-3 {background-image: url(./images/page-3.webp);}
+.webp .fcc-img-4 {background-image: url(./images/page-4.webp);}
+.webp .fcc-img-5 {background-image: url(./images/page-5.webp);}
+
+.no-webp .fcc-img-1 {background-image: url(./images/page-1.jpeg);}
+.no-webp .fcc-img-2 {background-image: url(./images/page-2.jpeg)}
+.no-webp .fcc-img-3 {background-image: url(./images/page-3.jpeg);}
+.no-webp .fcc-img-4 {background-image: url(./images/page-4.jpeg);}
+.no-webp .fcc-img-5 {background-image: url(./images/page-5.jpeg);}
 
 .project-buttons {
   display: flex;
